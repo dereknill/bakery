@@ -118,6 +118,19 @@ body {
 }
 
 #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.content-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-container {
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
@@ -126,6 +139,27 @@ body {
   margin-top: 50px;
   padding: 20px;
   font-size: 20px;
+  opacity: 1;
+}
+.content-container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fade-in-class {
+  opacity: 0;
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .ghost {
@@ -135,11 +169,6 @@ body {
 .map {
   width: 100%;
   margin-top: 15px;
-}
-
-.content-container {
-  width: 90%;
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {

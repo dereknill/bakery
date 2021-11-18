@@ -1,6 +1,7 @@
 export default function populatePage() {
   const contentDiv = document.getElementById("content");
   contentDiv.innerHTML = `
+  
       <div class="menu-grid">
         <div class="menu-food-item">
           <img src="assets/bread.png">
