@@ -1,0 +1,185 @@
+/* CSS reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* END CSS reset*/
+
+:root {
+  --primary-color: white;
+  --secondary-color: white;
+  --main-text-color: rgb(238, 238, 238);
+  --responsive-breakpoint: 700px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("./assets/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--main-text-color);
+}
+.responsive-container {
+  width: var(--responsive-breakpoint);
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
+.top-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.menu__list {
+  margin-bottom: 10px;
+}
+
+.menu__list--item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu__list--link {
+  font-size: 20px;
+}
+
+.menu__list--link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 80px;
+  letter-spacing: -4px;
+  font-family: "Baskerville", serif;
+  text-shadow: 1px 1px 5px black;
+  padding: 20px 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+
+.on-top {
+  z-index: 1;
+}
+
+.over-pic {
+  width: 10%;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#content {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.ghost {
+  width: 80%;
+}
+
+.map {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.content-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .content-container {
+    font-size: 16px;
+  }
+}
+
+.menu-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
+}
+
+.menu-food-item {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-food-item:hover {
+  background-color: rgba(150, 150, 150, 0.8);
+  cursor: pointer;
+}
+
+.menu-food-item img {
+  width: 70%;
+  z-index: 1;
+}
+
+.menu-food-item-text {
+  margin-top: -40px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-food-item-text {
+    margin-top: -20px;
+  }
+}
